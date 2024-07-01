@@ -1,0 +1,134 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #fff;
+}
+
+button {
+    margin: 0 10px 20px 17px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    background-color: #eee;
+    color: #3b4cca;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+input {
+    background-color: #eee;
+    padding: 10px;
+    border: none;
+    margin: 4px;
+    color: #3b4cca;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.dis {
+    display: none;
+}
+
+.back:hover, .next:hover {
+    background-color: #fff;
+}
+
+.div-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div {
+    outline: 2px solid #333;
+    padding: 20px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    margin: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: outline 0.3s, transform 0.3s;
+    font-family: 'Pixelify Sans', sans-serif;
+    animation: fadeInSlideIn 1s ease-in-out;
+}
+
+@keyframes fadeInSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(350px);
+    }
+    50%{
+        transform:scale(130%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.div:hover {
+    outline: 2px solid #fff;
+    transform: translateY(-5px);
+}
+
+.div-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div-btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.pokemon-stats{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.stat{
+    width: 90px;
+    height: 50px;
+    margin: 10px;
+    background-color: #eee;
+    color:#3b4cca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.name{
+    color:#3b4cca;
+    font-size: 50px;
+}
+h3{
+    color:#3b4cca;
+}
+#inp-btn {
+    width: 50%;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+img {
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

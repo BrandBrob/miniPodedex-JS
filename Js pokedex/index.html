@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pokedex JS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="div-main">
+            <div class="div">
+                <h2 class="name dis"></h2>
+                <h3 class="id dis"></h3>
+                <h3 class="type dis"></h3>
+                <div class="pokemon-div">
+                </div>
+                <div class="pokemon-stats" id="stats">
+
+                </div>
+                <div class="inputs-container">
+                    <div class="div-btns">
+                        <button class="back dis"><</button>
+                        <button class="next dis">></button>
+                    </div>
+                    <div class="div-inputs">
+                        <input list ="inp-text1" id="inp-text" placeholder="Choose your pokemon!" value="pikachu">
+                            <datalist id="inp-text1">
+
+                            </datalist>
+                        <input list="inp-gener1" id="inp-gener" placeholder="generation-v" value="generation-v">
+                            <datalist id="inp-gener1">
+
+                            </datalist>
+                        <input list="inp-game1" id="inp-game" placeholder="black-white, red-blue" value="black-white">
+                            <datalist id="inp-game1">
+                            
+                            </datalist>
+                        <input id="inp-btn" type="button" value="Enter">
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+        <script src="code/ObtainImgs.js" async defer></script>
+    </body>
+</html>
